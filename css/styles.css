@@ -165,8 +165,16 @@ address {
 
 .section-hero {
     margin-top: 0%;
+    background-color: #2E2F42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../imgs/herobg.jpg);
 
-    background: var(--main-font-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 
 
     text-align: center;
@@ -204,6 +212,7 @@ address {
 .btn-main:focus {
 
     background: #404BBF;
+
 
 }
 
@@ -254,6 +263,7 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondare-font-color);
+    margin-bottom: 8px;
 
 
 }
@@ -384,15 +394,19 @@ address {
 
 .team {
     background: var(--main-light-color);
-    display: inline; 
+    display: inline;
 
     flex-basis: calc(100% / 3 - 24px);
     margin-top: 48px;
 
     margin-left: 24px;
 
+}
 
-
+.team:hover,
+.team:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .specialist-person {
@@ -456,6 +470,9 @@ address {
 
     padding-top: 120px;
     padding-bottom: 120px;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 
 
 }
@@ -492,11 +509,42 @@ address {
     text-align: left;
     flex-basis: calc(100% - 72px / 4);
     margin-right: 24px;
+    cursor: pointer;
 }
 
 .goals-item:last-child {
 
     margin-right: 0%;
+
+}
+
+
+.goals-item::before {
+
+    height: 112px;
+    display: block;
+    content: "";
+    background-color: var(--border-bg-color);
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.icon-strategy::before {
+    background-image: url(../imgs/antenna\ 1\ \(2\).svg);
+}
+
+.icon-punctuality::before {
+    background-image: url(../imgs/clock\ 1.svg);
+}
+
+.icon-diligence::before {
+    background-image: url(../imgs/diagram\ 1.svg);
+}
+
+.icon-technologies::before {
+    background-image: url(../imgs/astronaut\ 1.svg);
 }
 
 .example {
@@ -581,6 +629,14 @@ img {
 
 .btn-profile {
     margin-right: 24px;
+
+}
+
+.btn-profile:hover,
+.btn-profile:focus {
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .btn-profile:last-child {
@@ -603,6 +659,121 @@ img {
     margin-right: 40px;
 }
 
-.projects-people{
+.projects-people {
     display: flex;
+}
+
+
+.network {
+    display: flex;
+    justify-content: space-around;
+}
+
+.network-point {
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.network-point:hover,
+.network-point:focus {
+    background: #404BBF;
+}
+
+.customers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.customers-logo {
+    width: 168px;
+    height: 88px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8E8F99;
+    cursor: pointer;
+    display: flex;
+}
+
+.customers-logo:hover,
+.customers-logo:focus {
+    border: 1px solid #404BBF;
+    border-radius: 4px;
+}
+
+.icons-logo {
+    width: 104px;
+    height: 56px;
+    align-items: center;
+    fill: #8E8F99;
+
+}
+
+.icons-logo:hover,
+.icons-logo:focus {
+    fill: #404BBF;
+}
+
+.social-media {
+    width: 208px;
+    height: 80px;
+    margin-left: 120px;
+
+
+}
+
+.media-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.icon-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-point {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-point:hover,
+.footer-point:focus {
+    background: #31D0AA;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.network-icon {
+    width: 16px;
+    height: 16px;
+    color: #F4F4FD;
+
+}
+
+.customers-link {
+    color: #8E8F99;
+    border: 1px solid #8E8F99;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    color: #404BBF;
+    border: 1px solid #404BBF;
 }
