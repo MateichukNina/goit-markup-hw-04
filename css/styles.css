@@ -779,10 +779,15 @@ img {
 }
 
 .network-icon {
+    width: 16px;
+    height: 16px;
+
+
+}
+
+.network-icon-footer{
     width: 24px;
     height: 24px;
-
-
 }
 
 .customers-link {
